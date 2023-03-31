@@ -1,0 +1,98 @@
+doctype html
+html(lang="ru")
+	include html/_head
+		title='Новости'
+	body
+		div.wrapper
+			include html/_header
+			main.page
+				section.news
+					.news__container
+						.news__info
+							.news__title
+								h2 Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции. Роддом Златоуста вновь откроет свои двери 8 февраля
+							.news__navigation.navigation-title
+								a(href="") Главная
+								a(href="") Новости
+						.news__header 
+							.news__category.category Медицина
+							.news__date.date 29/01/2021
+						.news__article
+							p <b>Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. Госпитальную базу для лечения больных коронавирусной инфекцией переводят в профильный режим. Приказ Министерство здравоохранения Челябинской области выпустило 27 января.</b>
+							br
+							p Напомним, перепрофилировать родильный дом решили в связи с ежедневным большим приростом златоустовцев, заболевших ковид-19.  За это время лечение на госпитальной базе прошли свыше 1000 пациентов.
+							br
+							br
+							img(src=("@img/image.jpg") alt="")
+							br
+							br
+							p <b>Александр Дорофеев</b>
+							p(style="font-weight: 300;") главный врач родильного дома г. Златоуста:
+							br
+							p «На сегодняшний день в МПЦ находятся 46 больных. Большая часть из них будет переведена на базу квартала Медик и меньшая часть – на базу долечивания, в район метзавода. В воскресенье к нам приезжает дезостанция для обработки всех помещений. С 1 по 7 число проводится заключительная дезинфекция всего родильного дома. С 8 числа мы начинаем принимать беременных и рожениц нашего города и горнозаводской зоны».
+							br
+							br
+							p
+								span
+							br
+							br
+							p Подготовка к возвращению профильной деятельности больниц проводится тщательным образом. Это полная дезинфекция помещений, забор ряда лабораторных анализов. И только после разрешения всех инстанций медицинское учреждение поступает к работе. Златоуст — не единственный город, где в связи со стабилизацией обстановки с коронавирусной инфекцией медицинские объекты возвращаются к плановому приёму пациентов. Решение по сокращению коечных мест для больных ковидом принимается оперативным штабом по борьбе с коронавирусной инфекцией при Правительстве Челябинской области. Оставшиеся ковид-базы перейдут в прежний режим работы при условии улучшения ситуации.
+							.news__items
+								.news__item
+									.news__name Автор материала
+									.news__value.news__value_bold <b>Иван Анатольев</b>
+								.news__item
+									.news__name Теги
+									.news__value
+										p Роддом /
+										p Вакцинация /
+										p Коронавирус
+								.news__item
+									.news__name Поделиться
+									.news__value
+										a.icon-youtube(href="")
+											img(src=("@img/icons/youtube.svg") alt="")
+										a.icon-facebook(href="")
+											img(src=("@img/icons/facebook.svg") alt="")
+										a.icon-vk(href="")
+											img(src=("@img/icons/vk.svg") alt="")
+										a.icon-classmates(href="")
+											img(src=("@img/icons/classmates.svg") alt="")
+										a.icon-instagram(href="")
+											img(src=("@img/icons/instagram.svg") alt="")
+				section.feedback
+					.feedback__container
+						.feedback__title 
+							h2 Оставьте свой комментарий
+						form.feedback__form(action="#")
+							input.input(
+								autocomplete="off"
+								type="text"
+								name="form[]"
+								placeholder="Имя"
+							)
+							input.input(
+								autocomplete="off"
+								type="email"
+								name="form[]"
+								placeholder="E-mail"
+							)
+							.feedback__input-file
+								input.input.input-file#input-file(
+								type="file"
+								name="form[]"
+								multiple
+							)
+								label.input-file-button(for="input-file")
+									span.input-file-icon-wrapper
+										img.input-file-icon(src=("@img/icons/clip.svg") alt="")
+									span.input-file-button-text Прикрепить фото
+							input.input(
+								autocomplete="off"
+								type="text"
+								name="form[]"
+								placeholder="Комментарий"
+							)
+							button.feedback__button(type="submit") Отправить
+			include html/_footer
+		include html/_js

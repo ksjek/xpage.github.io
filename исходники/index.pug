@@ -1,0 +1,113 @@
+doctype html
+html(lang="ru")
+	include html/_head
+		title='Главная'
+	body
+		div.wrapper
+			include html/_header
+			main.page
+				section.all-news
+					.all-news__container
+						.all-news__title.title
+							h1 Все новости
+						.all-news__navigation.navigation-title
+							a(href="") Главная
+							a Новости
+						.all-news__info
+							.all-news__calendar._icon-arrow-bottom
+								input.all-news__input.all-news__input(
+									autocomplete="off"
+									type="text"
+									name="form[]"
+									placeholder="02/02/2021"
+									data-calendar
+								)
+							.all-news__select._icon-arrow-bottom
+								select.all-news__form(
+									name="form[]"
+									data-scroll
+								)
+									option(value="1" selected) Выбрать рубрику
+									option(value="2") Медицина
+									option(value="3") Общество
+									option(value="4") Коммуналка
+									option(value="5") Политика
+									option(value="6") Спорт
+									option(value="7") Вектор развития
+									option(value="8") Медицина
+									option(value="9") Общество
+									option(value="10") Коммуналка
+									option(value="11") Политика
+						.all-news__items
+							.all-news__item
+								a.item-all-news(href="news.html")
+									.item-all-news__image.-ibg
+										img(src=("@img/all-news/01.png") alt="")
+									.item-all-news__body._icon-arrow
+										.item-all-news__info
+											.item-all-news__category Медицина
+											.item-all-news__category Общество
+											.item-all-news__date 02/02/2021
+										.item-all-news__text Благодаря поддержке предпринимателей. Златоустовские поликлиники оснастили холодильными установками для хранения вакцины
+							.all-news__item
+								a.item-all-news(href="news.html")
+									.item-all-news__image.-ibg
+										img(src=("@img/all-news/02.png") alt="")
+									.item-all-news__body._icon-arrow
+										.item-all-news__info
+											.item-all-news__category Медицина
+											.item-all-news__date 29/01/2021
+										.item-all-news__text Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции. Роддом Златоуста вновь откроет свои двери 8 февраля
+							.all-news__item
+								a.item-all-news(href="news.html")
+									.item-all-news__image.-ibg
+										img(src=("@img/all-news/03.png") alt="")
+									.item-all-news__body._icon-arrow
+										.item-all-news__info
+											.item-all-news__category Коммуналка
+											.item-all-news__date 29/01/2021
+										.item-all-news__text Осторожно, сосульки! Оттепель на этой неделе привела к тому, что на крышах многих домов образовались опасные ледяные наросты
+							.all-news__item
+								a.item-all-news(href="news.html")
+									.item-all-news__image.-ibg
+										img(src=("@img/all-news/04.png") alt="")
+									.item-all-news__body._icon-arrow
+										.item-all-news__info
+											.item-all-news__category Политика
+											.item-all-news__date 02/02/2021
+										.item-all-news__text В четыре раза меньше вопросов, чем обычно. В Златоусте прошло первое в 2021-м году Собрание депутатов
+							.all-news__item
+								a.item-all-news(href="news.html")
+									.item-all-news__image.-ibg
+										img(src=("@img/all-news/05.png") alt="")
+									.item-all-news__body._icon-arrow
+										.item-all-news__info
+											.item-all-news__category Коммуналка
+											.item-all-news__date 29/01/2021
+										.item-all-news__text В Златоусте сотрудники теротдела проверят магазин, из которого выбрасывали строительный мусор на контейнерную площадку
+							.all-news__item
+								a.item-all-news(href="news.html")
+									.item-all-news__image.-ibg
+										img(src=("@img/all-news/06.png") alt="")
+									.item-all-news__body._icon-arrow
+										.item-all-news__info
+											.item-all-news__category Общество
+											.item-all-news__date 29/01/2021
+										.item-all-news__text ДЧ: Первое Собрание депутатов 2021 года: планируется работа на весь год
+							.all-news__item.all-news__item_big._icon-arrow
+								a.item-all-news.item-all-news_big(href="news.html")
+									.item-all-news__image.item-all-news__image_big
+										img(src=("@img/all-news/02.png") alt="")
+									.item-all-news__body.item-all-news__body_big
+										.item-all-news__info
+											.item-all-news__category.category Медицина
+											.item-all-news__date.date 29/01/2021
+										.item-all-news__text.item-all-news__text_big Госпитальная база закрыта, учреждение вернётся в «доковидный» режим после дезинфекции. Роддом Златоуста вновь откроет свои двери 8 февраля
+										.item-all-news__text.item-all-news__text_all Ещё одна главная новость дня — с 8 февраля златоустовский роддом возвращается к привычному формату работы. Госпитальную базу для лечения больных коронавирусной инфекцией переводят...
+						.all-news__pagination
+							a._icon-arrow-right(href="")
+							for i in [1,2,3,4,"...","123"]
+								a(href="")= i
+							a._icon-arrow-right(href="")
+			include html/_footer
+		include html/_js

@@ -1,0 +1,116 @@
+//====================================================================================================
+.footer {
+    background-color: #FFFFFF;
+    // .footer__container
+
+    &__container {
+        @include adaptiveValue("padding-top", 59, 32);
+        @include adaptiveValue("padding-bottom", 49, 30);
+        display: grid;
+        @media(max-width: $mobileSmall){
+            justify-content: center;
+        }
+    }
+
+    // .footer__top
+
+    &__top {
+        @include adaptiveValue("padding-bottom", 50.5, 24);
+        position: relative;  
+        &::before{
+			content: "";
+			width: 100%;
+			@include adaptiveValue("height", 4, 2);
+			background-color: #373334;
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+		}
+    }
+
+    // .footer__social
+
+    &__social {
+        display: grid;
+        gap: 16px;
+        @media(max-width: $mobileSmall){
+            justify-items: center;
+        }
+    }
+
+    // .footer__bottom
+
+    &__bottom {
+        @include adaptiveValue("padding-top", 50.5, 24);
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: $mobileSmall){
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    // .footer__info
+
+    &__info {
+        display: grid;
+        gap: 5px;
+        font-size: 14px;
+        line-height: 170%;
+        a{
+            width: 82%;
+            transition: border 0.3s;
+            &:hover{
+                border-bottom: 1px solid #373334;
+            }
+            @media(max-width: $mobileSmall){
+                justify-self: center;
+            }
+        }
+    }
+
+    // .footer__copyright
+
+    &__copyright {
+    }
+
+    // .footer__logo
+
+    &__logo {
+    }
+}
+.social-footer {
+
+    // .social-footer__title
+
+    &__title {
+        font-size: 24px;
+        line-height: 115%;
+    }
+
+    // .social-footer__icon
+
+    &__icon {
+        display: flex;
+        gap: 20px;
+        a{
+            img{
+                width: 27px;
+            }
+        }
+    }
+}
+.icon-youtube {
+}
+.icon-facebook {
+}
+.icon-vk {
+}
+.icon-classmates {
+}
+.icon-instagram {
+}
+
+//====================================================================================================

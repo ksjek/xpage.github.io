@@ -1,0 +1,81 @@
+header.header
+	.header__container
+		.header__top
+			.header__offer
+				button(type="submit" class="header__button-news") Предложить новость
+				a._icon-megaphone(href="")
+			.header__icon(data-da=".menu__body,991.98,2")
+				a.icon-youtube(href="")
+					img(src=("@img/icons/youtube-white.svg") alt="")
+				a.icon-facebook(href="")
+					img(src=("@img/icons/facebook-white.svg") alt="")
+				a.icon-vk(href="")
+					img(src=("@img/icons/vk-white.svg") alt="")
+				a.icon-classmates(href="")
+					img(src=("@img/icons/classmates-white.svg") alt="")
+				a.icon-instagram(href="")
+					img(src=("@img/icons/instagram-white.svg") alt="")
+			a.header__logo-red
+				img(src=("@img/logo-red.svg") alt="")
+			a.header__logo-white
+				img(src=("@img/logo-white.svg") alt="")
+			.header__info
+				a.header__phone._icon-phone(href="tel:83513651711" data-da=".menu__body,991.98") 8 (3513) 65-17-11
+				a.header__search._icon-search(href="")
+		.header__bottom(data-da=".header__top,991.98,2")
+			.header__menu.menu
+				button(type="button" class="menu__icon icon-menu")
+					span
+				nav.menu__body
+					form.menu__form._icon-search(action="#")
+						input.menu__input(
+							type="text"
+							autocomplete="off"
+							name="form[]"
+						)
+					ul.menu__list
+						li.menu__item 
+							a.menu__link(href="index.html") Новости
+						li.menu__item
+							a.menu__link(href="") Телепроекты
+						li.menu__item
+							a.menu__link(href="") Реклама
+						li.menu__item
+							.spollers(data-spollers)
+								.spollers__item
+									button(type="button" data-spoller class="spollers__title _icon-arrow-bottom") Онлайн
+									.spollers__body
+										ul.spollers__list
+											li.spollers__link
+												a(href="") Заказать бегущую строку
+											li.spollers__link
+												a(href="") Заказать «Музыкальный подарок»
+											li.spollers__link
+												a(href="") Заказать «Чтобы помнили»
+						li.menu__item
+							a.menu__link(href="") Программа передач
+						li.menu__item
+							.spollers(data-spollers)
+								.spollers__item
+									button(type="button" data-spoller class="spollers__title _icon-arrow-bottom") Еще
+									.spollers__body
+										ul.spollers__list
+											li.spollers__link
+												a(href="") Заказать
+											li.spollers__link
+												a(href="") Заказать
+											li.spollers__link
+												a(href="") Заказать
+			.header__social.social-header
+				.social-header__title Подписывайтесь на нас:
+				.social-header__icon
+					a.icon-youtube(href="")
+						img(src=("@img/icons/youtube.svg") alt="")
+					a.icon-facebook(href="")
+						img(src=("@img/icons/facebook.svg") alt="")
+					a.icon-vk(href="")
+						img(src=("@img/icons/vk.svg") alt="")
+					a.icon-classmates(href="")
+						img(src=("@img/icons/classmates.svg") alt="")
+					a.icon-instagram(href="")
+						img(src=("@img/icons/instagram.svg") alt="")
