@@ -17,14 +17,3 @@
         }
     }
 }
-.category{
-    line-height: 135%;
-    color: #9F0023;
-    @include adaptiveValue("font-size", 16, 12);
-}
-.date{
-    @include adaptiveValue("font-size", 14, 12);
-    line-height: 115%;
-    letter-spacing: 0.05em;
-    color: #959595;
-}
